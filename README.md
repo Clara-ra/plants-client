@@ -1,7 +1,7 @@
 # Plants-Client
 This is a site that suggests the next plant you should buy. The basic functionality is in place, but it is a work in progress.
 
-**Link to project:** http://....TODO..../
+**Link to project:** http://clara-ra.github.io/plants-client
 
 ![alt tag](https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1191&q=80)
 
