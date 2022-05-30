@@ -171,6 +171,7 @@ img{
     border-color: var(--button-color);
     font-weight: 300;
     color: #FFF;
+    margin-top: 7rem;
   }
   .hero button:hover{
     background-color: var(--button-hover);
