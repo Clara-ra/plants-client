@@ -1,0 +1,189 @@
+:root{
+  --dark-slate-blue: #4F4789;
+  --old-rose: #C17C74;
+  --laurel-green: #A3B899;
+  --russian-gren: #739e82;
+  --hunter-green: #2c5530;
+  --shadow-blue: #8497B3;
+
+  --button-color: var(--hunter-green);
+  --background-color: var(--laurel-green);
+  --button-active: var(--shadow-blue);
+  --button-hover: var(--dark-slate-blue)
+}
+
+/******************************************
+/* CSS
+/*******************************************/
+@-ms-viewport{
+  width: device-width;
+}
+
+*{
+  box-sizing: border-box;
+  font-weight: 100;
+  font-family: 'Roboto', 'Roboto Slab', 'Lato', 'Helvetica Neue', sans-serif;
+  color: #000;
+  margin: 0;
+	font-size: 100%;
+  min-width: 0;
+}
+/******************************************
+/* LAYOUT
+/******************************************
+
+*/
+html{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+  background: var(--background-color);
+  height:100%;
+  position: relative;
+}
+p{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+/*========= HEADER SECTION ===========*/
+.header-fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  z-index: 99;
+}
+header{
+  display: flex;
+  flex-direction: column;
+}
+
+/*====== FOOTER SECTION ========*/
+/* .footer-fixed{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--background-color);
+  z-index: 99;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+}
+.footer-container{
+  padding: 10px 10px 0px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  height:60px;
+}
+.attribution{
+  font-size: 50%;
+} */
+
+/*========== MAIN CONTAINER ===========*/
+.main-container{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+img{
+  display: block;
+  margin: 0.5rem;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10%;
+}
+#plant-name{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 60%;
+}
+.hide{
+  display: flex;
+  animation: append-animate .4s ease;
+}
+
+/*========HERO=============*/
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  overflow: auto;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color: var(--background-color);
+  height:100%;
+  width:100%;
+  }
+  .hero h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 60%;
+  }
+  .hero p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 42%;
+    margin: 0;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  .hero button{
+    background: var(--button-color);
+    padding: 1em;
+    border-radius: 7px;
+    border-color: var(--button-color);
+    font-weight: 300;
+    color: #FFF;
+  }
+  .hero button:hover{
+    background-color: var(--button-hover);
+  }
+  .hero button:active{
+    background-color: var(--button-active);
+    border: none;
+    font-weight: 650;
+  }
+
+
+  @media (max-width:500px) {
+    .hero button {
+      margin-top: 8rem;
+    }
+  }
